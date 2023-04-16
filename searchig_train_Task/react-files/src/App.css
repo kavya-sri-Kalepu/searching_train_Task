@@ -1,0 +1,116 @@
+html,
+body,
+.App {
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1535535112387-56ffe8db21ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.main-heading{
+    font-size: 55px;
+    color: #fff;
+    font-weight: bold;
+    margin: 20px 0px 40px 0px;
+    letter-spacing: 2px;
+}
+.main-container {
+  padding:1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.left-side-section {
+  background-color: #508d82ac;
+  padding: 20px;
+  border-radius: 10px;
+  height: 500px;
+}
+.form-label {
+  margin-top: 20px;
+  font-size: 22px;
+    color: #fff;
+}
+.form-btn{
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #759715;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 9px #ccc;
+}
+.form-btn:hover{
+  background-color: #007bff76;
+
+}
+.form-btn:active{
+  background-color: #4D8B58;
+  box-shadow: 0px 5px #ddd;
+  transform: translateY(5px);
+}
+.right-side-trains{
+  overflow: auto;
+  height: 500px;
+}
+.form-group {
+margin-bottom: 1rem;
+}
+
+.table {
+background-color: #fff;
+}
+
+.table thead th {
+vertical-align: bottom;
+border-bottom: 2px solid #dee2e6;
+color: #fff;
+background-color: #4D8B58;
+position: sticky;
+top: 0px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+background-color: #87c5b883;
+}
+
+.table-hover tbody tr:hover {
+background-color: #508d827e;
+}
+.no-results{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+
+}
+
+@media only screen and (max-width:767px){
+  body{
+    height: unset;
+    background-position: unset;
+    background-repeat: unset;
+  }
+  .left-side-section {
+    height: auto;
+  }
+  .right-side-trains{
+    height: 300px;
+  }
+}
